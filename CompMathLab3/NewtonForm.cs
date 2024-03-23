@@ -30,7 +30,7 @@ namespace CompMathLab3
                 return ans;
             }
 
-            double ans1 = (functionValues[0] - functionValues[1]) / (xValues[0] - xValues[1]);
+            double ans1 = (functionValues[0] - functionValues[1]) / (xValues[0] - xValues[1]);  
             return ans1;
         }
 

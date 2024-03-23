@@ -55,6 +55,7 @@
     </Compile>
     <Compile Include="GausMethod.cs" />
     <Compile Include="Lagrange.cs" />
+    <Compile Include="LeastSquares.cs" />
     <Compile Include="Matrix.cs" />
     <Compile Include="NewtonForm.cs" />
     <Compile Include="Program.cs" />

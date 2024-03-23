@@ -18,9 +18,7 @@ namespace CompMathLab3
             {
                 for (int j = 0; j < numbers.GetLength(1); j++)
                     if (i != j)
-                        li *= (x - numbers[0,j]) / (numbers[0, i] - numbers[0, j]);
-                    
-                
+                        li *= (x - numbers[0,j]) / (numbers[0, i] - numbers[0, j]);                             
                 li *= numbers[1, i];
                 l[i] = li;
                 li = 1;
