@@ -53,7 +53,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GausMethod.cs" />
     <Compile Include="Lagrange.cs" />
+    <Compile Include="Matrix.cs" />
     <Compile Include="NewtonForm.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
