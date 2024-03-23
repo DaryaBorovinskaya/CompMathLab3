@@ -214,5 +214,10 @@ namespace CompMathLab3
                 textBoxA0.Visible = false;
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
