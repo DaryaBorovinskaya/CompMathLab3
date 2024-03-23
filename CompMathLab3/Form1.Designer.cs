@@ -33,7 +33,6 @@
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -65,15 +64,6 @@
             this.chart1.Size = new System.Drawing.Size(1001, 625);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1067, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 50);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Исходная функция";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -113,7 +103,6 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.chart1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -125,7 +114,6 @@
         #endregion
 
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;

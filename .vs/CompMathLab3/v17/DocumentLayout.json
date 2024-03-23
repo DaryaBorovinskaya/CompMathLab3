@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\dashh\\source\\repos\\CompMathLab3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|C:\\Users\\dashh\\source\\repos\\CompMathLab3\\compmathlab3\\newtonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|c:\\users\\dashh\\source\\repos\\compmathlab3\\compmathlab3\\lagrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|solutionrelative:compmathlab3\\lagrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|c:\\users\\dashh\\source\\repos\\compmathlab3\\compmathlab3\\newtonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|solutionrelative:compmathlab3\\newtonform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|c:\\users\\dashh\\source\\repos\\compmathlab3\\compmathlab3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|C:\\Users\\dashh\\source\\repos\\CompMathLab3\\compmathlab3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|solutionrelative:compmathlab3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|C:\\Users\\dashh\\source\\repos\\CompMathLab3\\compmathlab3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|solutionrelative:compmathlab3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|C:\\Users\\dashh\\source\\repos\\CompMathLab3\\compmathlab3\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|solutionrelative:compmathlab3\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|C:\\Users\\dashh\\source\\repos\\CompMathLab3\\compmathlab3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB110B8-D35D-4AAD-A604-72E2085413A5}|CompMathLab3\\CompMathLab3.csproj|solutionrelative:compmathlab3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Lagrange.cs",
+              "DocumentMoniker": "C:\\Users\\dashh\\source\\repos\\CompMathLab3\\CompMathLab3\\Lagrange.cs",
+              "RelativeDocumentMoniker": "CompMathLab3\\Lagrange.cs",
+              "ToolTip": "C:\\Users\\dashh\\source\\repos\\CompMathLab3\\CompMathLab3\\Lagrange.cs",
+              "RelativeToolTip": "CompMathLab3\\Lagrange.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAqwBUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T06:18:38.145Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -36,14 +53,14 @@
               "RelativeDocumentMoniker": "CompMathLab3\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\dashh\\source\\repos\\CompMathLab3\\CompMathLab3\\Form1.Designer.cs",
               "RelativeToolTip": "CompMathLab3\\Form1.Designer.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEsAAAA4AAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAAEMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-19T06:38:20.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NewtonForm.cs",
               "DocumentMoniker": "C:\\Users\\dashh\\source\\repos\\CompMathLab3\\CompMathLab3\\NewtonForm.cs",
               "RelativeDocumentMoniker": "CompMathLab3\\NewtonForm.cs",
@@ -56,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\dashh\\source\\repos\\CompMathLab3\\CompMathLab3\\Form1.cs",
               "RelativeDocumentMoniker": "CompMathLab3\\Form1.cs",
@@ -69,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\dashh\\source\\repos\\CompMathLab3\\CompMathLab3\\Form1.cs",
               "RelativeDocumentMoniker": "CompMathLab3\\Form1.cs",
