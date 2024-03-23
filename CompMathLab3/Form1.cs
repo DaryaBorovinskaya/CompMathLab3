@@ -68,10 +68,28 @@ namespace CompMathLab3
         private void DrawByLeastSquares()
         {
             chart1.Series[0].Points.Clear();
-            double[] y = _leastSquares.ApplySmoothing(Numbers, (int)numericUpDownDegree.Value);
-            for(int i = 0; i<y.Length; i++)
+            if (numericUpDownDegree.Value == 4)
             {
-                chart1.Series[0].Points.AddXY(Numbers[0, i], y[i]);
+                double[] y = _leastSquares.ApplySmoothing(Numbers, (int)numericUpDownDegree.Value, new double[]
+                {
+                    double.Parse(textBoxA4.Text),
+                    double.Parse(textBoxA3.Text),
+                    double.Parse(textBoxA2.Text),
+                    double.Parse(textBoxA1.Text),
+                    double.Parse(textBoxA0.Text)
+                });
+                for (int i = 0; i < y.Length; i++)
+                {
+                    chart1.Series[0].Points.AddXY(Numbers[0, i], y[i]);
+                }
+            }
+            else
+            {
+                double[] y = _leastSquares.ApplySmoothing(Numbers, (int)numericUpDownDegree.Value);
+                for (int i = 0; i < y.Length; i++)
+                {
+                    chart1.Series[0].Points.AddXY(Numbers[0, i], y[i]);
+                }
             }
         }
 
@@ -145,18 +163,42 @@ namespace CompMathLab3
         {
             if(comboBoxMethods.SelectedIndex == 2)
             {
+
+                labelDegree.Visible = true;
+                numericUpDownDegree.Visible = true;
+            }
+            else
+            {
+                numericUpDownDegree.Value = 0;
+                label1.Visible = false;
+                label2.Visible = false;
+                label3.Visible = false;
+                label4.Visible = false;
+                label5.Visible = false;
+                textBoxA4.Visible = false;
+                textBoxA3.Visible = false;
+                textBoxA2.Visible = false;
+                textBoxA1.Visible = false;
+                textBoxA0.Visible = false;
+                labelDegree.Visible = false;
+                numericUpDownDegree.Visible = false;
+            }
+        }
+
+        private void numericUpDownDegree_ValueChanged(object sender, EventArgs e)
+        {
+            if(numericUpDownDegree.Value == 4) 
+            {
                 label1.Visible = true;
                 label2.Visible = true;
                 label3.Visible = true;
                 label4.Visible = true;
                 label5.Visible = true;
-                textBoxA1.Visible = true;
-                textBoxA2.Visible = true;
-                textBoxA3.Visible = true;
                 textBoxA4.Visible = true;
-                textBoxA5.Visible = true;
-                labelDegree.Visible = true;
-                numericUpDownDegree.Visible = true;
+                textBoxA3.Visible = true;
+                textBoxA2.Visible = true;
+                textBoxA1.Visible = true;
+                textBoxA0.Visible = true;
             }
             else
             {
@@ -165,13 +207,11 @@ namespace CompMathLab3
                 label3.Visible = false;
                 label4.Visible = false;
                 label5.Visible = false;
-                textBoxA1.Visible = false;
-                textBoxA2.Visible = false;
-                textBoxA3.Visible = false;
                 textBoxA4.Visible = false;
-                textBoxA5.Visible = false;
-                labelDegree.Visible = false;
-                numericUpDownDegree.Visible = false;
+                textBoxA3.Visible = false;
+                textBoxA2.Visible = false;
+                textBoxA1.Visible = false;
+                textBoxA0.Visible = false;
             }
         }
     }
