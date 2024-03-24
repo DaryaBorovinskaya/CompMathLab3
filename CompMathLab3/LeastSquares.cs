@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CompMathLab3
 {
@@ -12,7 +9,7 @@ namespace CompMathLab3
     public class LeastSquares
     {
         /// <summary>
-        /// подсчёт 
+        /// подсчёт коэффициентов многочлена
         /// </summary>
         /// <param name="numbers"></param>
         /// <param name="polynomialDegree"></param>
@@ -78,15 +75,12 @@ namespace CompMathLab3
         {
             double[] smoothingY = new double[numbers.GetLength(1)];
 
-
-
-
             double newY = 0;
             for (int i = 0; i < numbers.GetLength(1); i++)
             {
                 newY = 0;
                 for (int k = 0; k < polynomialDegree + 1; k++)
-                    newY += coeffOfPolynomial[k] * Math.Pow(numbers[0, i], polynomialDegree - k);
+                    newY += coeffOfPolynomial[k] * Math.Pow(numbers[0,i], polynomialDegree - k);
                 smoothingY[i] = newY;
             }
             return smoothingY;

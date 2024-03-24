@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace CompMathLab3
 {
     public class Lagrange
@@ -24,7 +19,7 @@ namespace CompMathLab3
                 li = 1;
             }
 
-            foreach(int i in l)
+            foreach(double i in l)
                 result += i;
             
             return result;
