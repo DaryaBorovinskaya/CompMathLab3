@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CompMathLab3
@@ -23,12 +16,9 @@ namespace CompMathLab3
             {
                 double maxValue = double.MinValue;
                 for (int i = 0; i < Numbers.GetLength(1); i++)
-                {
                     if (Numbers[0, i]> maxValue)
-                    {
                         maxValue = Numbers[0, i];
-                    }
-                }
+                    
                 return maxValue;
             }
         }
@@ -70,17 +60,25 @@ namespace CompMathLab3
             chart1.Series[0].Points.Clear();
             if (numericUpDownDegree.Value == 4)
             {
-                double[] y = _leastSquares.ApplySmoothing(Numbers, (int)numericUpDownDegree.Value, new double[]
+                if (textBoxA4.Text == string.Empty || textBoxA3.Text == string.Empty || textBoxA2.Text == string.Empty 
+                    || textBoxA1.Text == string.Empty || textBoxA0.Text == string.Empty)
                 {
-                    double.Parse(textBoxA4.Text),
-                    double.Parse(textBoxA3.Text),
-                    double.Parse(textBoxA2.Text),
-                    double.Parse(textBoxA1.Text),
-                    double.Parse(textBoxA0.Text)
-                });
-                for (int i = 0; i < y.Length; i++)
-                {
-                    chart1.Series[0].Points.AddXY(Numbers[0, i], y[i]);
+                    MessageBox.Show("Введите коэффициенты а4, а3, а2, а1 и а0");
+                }
+                else 
+                { 
+                    double[] y = _leastSquares.ApplySmoothing(Numbers, (int)numericUpDownDegree.Value, new double[]
+                    {
+                        double.Parse(textBoxA4.Text),
+                        double.Parse(textBoxA3.Text),
+                        double.Parse(textBoxA2.Text),
+                        double.Parse(textBoxA1.Text),
+                        double.Parse(textBoxA0.Text)
+                    });
+                    for (int i = 0; i < y.Length; i++)
+                    {
+                        chart1.Series[0].Points.AddXY(Numbers[0, i], y[i]);
+                    }
                 }
             }
             else
@@ -117,6 +115,8 @@ namespace CompMathLab3
         private void DrawPoints()
         {
             chart1.Series[3].Points.Clear();
+            chart1.Series[3].MarkerSize = 8;
+            chart1.Series[3].MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
             for (int i = 0; i < Numbers.GetLength(1); i++)
             {
                 chart1.Series[3].Points.AddXY(Numbers[0, i], Numbers[1, i]);
