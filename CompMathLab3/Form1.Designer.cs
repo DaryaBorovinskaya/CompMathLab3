@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridViewCoordinates = new System.Windows.Forms.DataGridView();
@@ -66,36 +66,36 @@
             // 
             // chart1
             // 
-            chartArea2.AxisX.Maximum = 10D;
-            chartArea2.AxisX.Minimum = -1D;
-            chartArea2.AxisY.Maximum = 20D;
-            chartArea2.AxisY.Minimum = -1D;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            this.chart1.Location = new System.Drawing.Point(18, 10);
-            this.chart1.Margin = new System.Windows.Forms.Padding(2);
+            chartArea4.AxisX.Maximum = 10D;
+            chartArea4.AxisX.Minimum = -1D;
+            chartArea4.AxisY.Maximum = 20D;
+            chartArea4.AxisY.Minimum = -1D;
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            this.chart1.Location = new System.Drawing.Point(24, 12);
+            this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
-            series5.BorderWidth = 2;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.Color = System.Drawing.Color.Purple;
-            series5.Name = "Series1";
-            series6.BorderWidth = 2;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series6.Name = "Series2";
-            series7.BorderWidth = 2;
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series7.Name = "Series3";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series8.Name = "Series4";
-            this.chart1.Series.Add(series5);
-            this.chart1.Series.Add(series6);
-            this.chart1.Series.Add(series7);
-            this.chart1.Series.Add(series8);
-            this.chart1.Size = new System.Drawing.Size(513, 333);
+            series13.BorderWidth = 2;
+            series13.ChartArea = "ChartArea1";
+            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series13.Color = System.Drawing.Color.Purple;
+            series13.Name = "Series1";
+            series14.BorderWidth = 2;
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series14.Name = "Series2";
+            series15.BorderWidth = 2;
+            series15.ChartArea = "ChartArea1";
+            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series15.Name = "Series3";
+            series16.ChartArea = "ChartArea1";
+            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series16.Name = "Series4";
+            this.chart1.Series.Add(series13);
+            this.chart1.Series.Add(series14);
+            this.chart1.Series.Add(series15);
+            this.chart1.Series.Add(series16);
+            this.chart1.Size = new System.Drawing.Size(684, 410);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "Графики";
             // 
@@ -106,29 +106,36 @@
             this.dataGridViewCoordinates.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.x,
             this.y});
-            this.dataGridViewCoordinates.Location = new System.Drawing.Point(536, 12);
+            this.dataGridViewCoordinates.Location = new System.Drawing.Point(715, 15);
+            this.dataGridViewCoordinates.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewCoordinates.Name = "dataGridViewCoordinates";
-            this.dataGridViewCoordinates.Size = new System.Drawing.Size(240, 258);
+            this.dataGridViewCoordinates.RowHeadersWidth = 51;
+            this.dataGridViewCoordinates.Size = new System.Drawing.Size(320, 318);
             this.dataGridViewCoordinates.TabIndex = 5;
             // 
             // x
             // 
             this.x.Frozen = true;
             this.x.HeaderText = "x";
+            this.x.MinimumWidth = 6;
             this.x.Name = "x";
+            this.x.Width = 125;
             // 
             // y
             // 
             this.y.Frozen = true;
             this.y.HeaderText = "y";
+            this.y.MinimumWidth = 6;
             this.y.Name = "y";
+            this.y.Width = 125;
             // 
             // buttonAddCoordinate
             // 
             this.buttonAddCoordinate.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonAddCoordinate.Location = new System.Drawing.Point(536, 266);
+            this.buttonAddCoordinate.Location = new System.Drawing.Point(715, 327);
+            this.buttonAddCoordinate.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAddCoordinate.Name = "buttonAddCoordinate";
-            this.buttonAddCoordinate.Size = new System.Drawing.Size(240, 36);
+            this.buttonAddCoordinate.Size = new System.Drawing.Size(320, 44);
             this.buttonAddCoordinate.TabIndex = 6;
             this.buttonAddCoordinate.Text = "Добавить точку";
             this.buttonAddCoordinate.UseVisualStyleBackColor = true;
@@ -137,9 +144,10 @@
             // buttonDeleteCoordinate
             // 
             this.buttonDeleteCoordinate.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDeleteCoordinate.Location = new System.Drawing.Point(536, 308);
+            this.buttonDeleteCoordinate.Location = new System.Drawing.Point(715, 379);
+            this.buttonDeleteCoordinate.Margin = new System.Windows.Forms.Padding(4);
             this.buttonDeleteCoordinate.Name = "buttonDeleteCoordinate";
-            this.buttonDeleteCoordinate.Size = new System.Drawing.Size(240, 36);
+            this.buttonDeleteCoordinate.Size = new System.Drawing.Size(320, 44);
             this.buttonDeleteCoordinate.TabIndex = 7;
             this.buttonDeleteCoordinate.Text = "Удалить точку";
             this.buttonDeleteCoordinate.UseVisualStyleBackColor = true;
@@ -154,9 +162,10 @@
             "Метод Лагранжа",
             "Метод Ньютона",
             "Метод наименьших квадратов"});
-            this.comboBoxMethods.Location = new System.Drawing.Point(781, 40);
+            this.comboBoxMethods.Location = new System.Drawing.Point(1041, 49);
+            this.comboBoxMethods.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxMethods.Name = "comboBoxMethods";
-            this.comboBoxMethods.Size = new System.Drawing.Size(236, 32);
+            this.comboBoxMethods.Size = new System.Drawing.Size(313, 37);
             this.comboBoxMethods.TabIndex = 8;
             this.comboBoxMethods.SelectedIndexChanged += new System.EventHandler(this.comboBoxMethods_SelectedIndexChanged);
             // 
@@ -166,9 +175,10 @@
             this.labelMethod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelMethod.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelMethod.ForeColor = System.Drawing.Color.White;
-            this.labelMethod.Location = new System.Drawing.Point(807, 12);
+            this.labelMethod.Location = new System.Drawing.Point(1076, 15);
+            this.labelMethod.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMethod.Name = "labelMethod";
-            this.labelMethod.Size = new System.Drawing.Size(177, 27);
+            this.labelMethod.Size = new System.Drawing.Size(222, 34);
             this.labelMethod.TabIndex = 9;
             this.labelMethod.Text = "Выберите метод";
             // 
@@ -177,9 +187,10 @@
             this.buttonUseMethod.BackColor = System.Drawing.Color.Transparent;
             this.buttonUseMethod.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonUseMethod.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonUseMethod.Location = new System.Drawing.Point(781, 78);
+            this.buttonUseMethod.Location = new System.Drawing.Point(1041, 96);
+            this.buttonUseMethod.Margin = new System.Windows.Forms.Padding(4);
             this.buttonUseMethod.Name = "buttonUseMethod";
-            this.buttonUseMethod.Size = new System.Drawing.Size(236, 41);
+            this.buttonUseMethod.Size = new System.Drawing.Size(315, 50);
             this.buttonUseMethod.TabIndex = 10;
             this.buttonUseMethod.Text = "Применить метод";
             this.buttonUseMethod.UseVisualStyleBackColor = false;
@@ -188,10 +199,10 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(781, 124);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Location = new System.Drawing.Point(1041, 153);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(236, 41);
+            this.button4.Size = new System.Drawing.Size(315, 50);
             this.button4.TabIndex = 4;
             this.button4.Text = "Очистить";
             this.button4.UseVisualStyleBackColor = true;
@@ -200,7 +211,8 @@
             // numericUpDownDegree
             // 
             this.numericUpDownDegree.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.numericUpDownDegree.Location = new System.Drawing.Point(781, 313);
+            this.numericUpDownDegree.Location = new System.Drawing.Point(1041, 385);
+            this.numericUpDownDegree.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownDegree.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -212,7 +224,7 @@
             0,
             -2147483648});
             this.numericUpDownDegree.Name = "numericUpDownDegree";
-            this.numericUpDownDegree.Size = new System.Drawing.Size(236, 29);
+            this.numericUpDownDegree.Size = new System.Drawing.Size(315, 34);
             this.numericUpDownDegree.TabIndex = 11;
             this.numericUpDownDegree.Visible = false;
             this.numericUpDownDegree.ValueChanged += new System.EventHandler(this.numericUpDownDegree_ValueChanged);
@@ -223,9 +235,10 @@
             this.labelDegree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelDegree.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelDegree.ForeColor = System.Drawing.Color.White;
-            this.labelDegree.Location = new System.Drawing.Point(776, 283);
+            this.labelDegree.Location = new System.Drawing.Point(1035, 348);
+            this.labelDegree.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDegree.Name = "labelDegree";
-            this.labelDegree.Size = new System.Drawing.Size(93, 27);
+            this.labelDegree.Size = new System.Drawing.Size(116, 34);
             this.labelDegree.TabIndex = 12;
             this.labelDegree.Text = "Степень";
             this.labelDegree.Visible = false;
@@ -233,9 +246,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1022, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(1363, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(276, 332);
+            this.pictureBox1.Size = new System.Drawing.Size(368, 409);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -246,58 +260,65 @@
             this.labelMeme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelMeme.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelMeme.ForeColor = System.Drawing.Color.White;
-            this.labelMeme.Location = new System.Drawing.Point(1116, 28);
+            this.labelMeme.Location = new System.Drawing.Point(1488, 34);
+            this.labelMeme.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMeme.Name = "labelMeme";
-            this.labelMeme.Size = new System.Drawing.Size(159, 27);
+            this.labelMeme.Size = new System.Drawing.Size(201, 34);
             this.labelMeme.TabIndex = 14;
             this.labelMeme.Text = "Я программист";
             // 
             // textBoxA1
             // 
-            this.textBoxA1.Location = new System.Drawing.Point(928, 170);
+            this.textBoxA1.Location = new System.Drawing.Point(1237, 209);
+            this.textBoxA1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxA1.Name = "textBoxA1";
-            this.textBoxA1.Size = new System.Drawing.Size(89, 20);
+            this.textBoxA1.Size = new System.Drawing.Size(117, 22);
             this.textBoxA1.TabIndex = 15;
             this.textBoxA1.Visible = false;
             // 
             // textBoxA3
             // 
-            this.textBoxA3.Location = new System.Drawing.Point(797, 196);
+            this.textBoxA3.Location = new System.Drawing.Point(1063, 241);
+            this.textBoxA3.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxA3.Name = "textBoxA3";
-            this.textBoxA3.Size = new System.Drawing.Size(89, 20);
+            this.textBoxA3.Size = new System.Drawing.Size(117, 22);
             this.textBoxA3.TabIndex = 16;
             this.textBoxA3.Visible = false;
             // 
             // textBoxA2
             // 
-            this.textBoxA2.Location = new System.Drawing.Point(796, 222);
+            this.textBoxA2.Location = new System.Drawing.Point(1061, 273);
+            this.textBoxA2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxA2.Name = "textBoxA2";
-            this.textBoxA2.Size = new System.Drawing.Size(90, 20);
+            this.textBoxA2.Size = new System.Drawing.Size(119, 22);
             this.textBoxA2.TabIndex = 17;
             this.textBoxA2.Visible = false;
             // 
             // textBoxA4
             // 
-            this.textBoxA4.Location = new System.Drawing.Point(797, 170);
+            this.textBoxA4.Location = new System.Drawing.Point(1063, 209);
+            this.textBoxA4.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxA4.Name = "textBoxA4";
-            this.textBoxA4.Size = new System.Drawing.Size(89, 20);
+            this.textBoxA4.Size = new System.Drawing.Size(117, 22);
             this.textBoxA4.TabIndex = 18;
             this.textBoxA4.Visible = false;
             // 
             // textBoxA0
             // 
-            this.textBoxA0.Location = new System.Drawing.Point(928, 196);
+            this.textBoxA0.Location = new System.Drawing.Point(1237, 241);
+            this.textBoxA0.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxA0.Name = "textBoxA0";
-            this.textBoxA0.Size = new System.Drawing.Size(88, 20);
+            this.textBoxA0.Size = new System.Drawing.Size(116, 22);
             this.textBoxA0.TabIndex = 19;
             this.textBoxA0.Visible = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(903, 199);
+            this.label1.Location = new System.Drawing.Point(1204, 245);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 13);
+            this.label1.Size = new System.Drawing.Size(22, 16);
             this.label1.TabIndex = 20;
             this.label1.Text = "a0";
             this.label1.Visible = false;
@@ -305,9 +326,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(903, 173);
+            this.label2.Location = new System.Drawing.Point(1204, 213);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(19, 13);
+            this.label2.Size = new System.Drawing.Size(22, 16);
             this.label2.TabIndex = 21;
             this.label2.Text = "a1";
             this.label2.Visible = false;
@@ -315,9 +337,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(778, 222);
+            this.label3.Location = new System.Drawing.Point(1037, 273);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(19, 13);
+            this.label3.Size = new System.Drawing.Size(22, 16);
             this.label3.TabIndex = 22;
             this.label3.Text = "a2";
             this.label3.Visible = false;
@@ -325,9 +348,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(778, 199);
+            this.label4.Location = new System.Drawing.Point(1037, 245);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(19, 13);
+            this.label4.Size = new System.Drawing.Size(22, 16);
             this.label4.TabIndex = 23;
             this.label4.Text = "a3";
             this.label4.Visible = false;
@@ -335,19 +359,20 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(778, 173);
+            this.label5.Location = new System.Drawing.Point(1037, 213);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 13);
+            this.label5.Size = new System.Drawing.Size(22, 16);
             this.label5.TabIndex = 24;
             this.label5.Text = "a4";
             this.label5.Visible = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1313, 367);
+            this.ClientSize = new System.Drawing.Size(1751, 452);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -371,10 +396,14 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.chart1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "АППРОКСИМАТОР ФУНКЦИЙ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCoordinates)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDegree)).EndInit();
