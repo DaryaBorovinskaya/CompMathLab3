@@ -38,3 +38,13 @@ C:\Users\dashh\source\repos\1\CompMathLab3\CompMathLab3\obj\Debug\CompMathLab3.c
 C:\Users\dashh\source\repos\1\CompMathLab3\CompMathLab3\obj\Debug\CompMathLab3.csproj.CoreCompileInputs.cache
 C:\Users\dashh\source\repos\1\CompMathLab3\CompMathLab3\obj\Debug\CompMathLab3.exe
 C:\Users\dashh\source\repos\1\CompMathLab3\CompMathLab3\obj\Debug\CompMathLab3.pdb
+C:\Users\Пользователь\Source\Repos\CompMathLab3\CompMathLab3\bin\Debug\CompMathLab3.exe.config
+C:\Users\Пользователь\Source\Repos\CompMathLab3\CompMathLab3\bin\Debug\CompMathLab3.exe
+C:\Users\Пользователь\Source\Repos\CompMathLab3\CompMathLab3\bin\Debug\CompMathLab3.pdb
+C:\Users\Пользователь\Source\Repos\CompMathLab3\CompMathLab3\obj\Debug\CompMathLab3.csproj.AssemblyReference.cache
+C:\Users\Пользователь\Source\Repos\CompMathLab3\CompMathLab3\obj\Debug\CompMathLab3.Form1.resources
+C:\Users\Пользователь\Source\Repos\CompMathLab3\CompMathLab3\obj\Debug\CompMathLab3.Properties.Resources.resources
+C:\Users\Пользователь\Source\Repos\CompMathLab3\CompMathLab3\obj\Debug\CompMathLab3.csproj.GenerateResource.cache
+C:\Users\Пользователь\Source\Repos\CompMathLab3\CompMathLab3\obj\Debug\CompMathLab3.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\Source\Repos\CompMathLab3\CompMathLab3\obj\Debug\CompMathLab3.exe
+C:\Users\Пользователь\Source\Repos\CompMathLab3\CompMathLab3\obj\Debug\CompMathLab3.pdb

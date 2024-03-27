@@ -10,6 +10,7 @@ namespace CompMathLab3
         private Lagrange _lagrange = new Lagrange();
         private NewtonForm _newtonForm = new NewtonForm();
         private LeastSquares _leastSquares = new LeastSquares();
+        
         private double MaxX
         {
             get
@@ -22,19 +23,24 @@ namespace CompMathLab3
                 return maxValue;
             }
         }
+        private double[,] _numbers;
         private double[,] Numbers
         {
             get
             {
-                double[,] numbers = new double[dataGridViewCoordinates.Columns.Count, dataGridViewCoordinates.Rows.Count];
-                for (int i = 0; i < dataGridViewCoordinates.Columns.Count; i++)
+                if (_numbers == null)
                 {
-                    for (int j = 0; j < (dataGridViewCoordinates.Rows.Count); j++)
+                    _numbers = new double[dataGridViewCoordinates.Columns.Count, dataGridViewCoordinates.Rows.Count];
+                    for (int i = 0; i < dataGridViewCoordinates.Columns.Count; i++)
                     {
-                        numbers[i, j] = double.Parse(dataGridViewCoordinates[i, j].Value.ToString());
+                        for (int j = 0; j < (dataGridViewCoordinates.Rows.Count); j++)
+                        {
+                            _numbers[i, j] = double.Parse(dataGridViewCoordinates[i, j].Value.ToString());
+                        }
                     }
+
                 }
-                return numbers;
+                return _numbers;
             }
         }
         public Form1()
@@ -137,16 +143,61 @@ namespace CompMathLab3
 
         private void buttonAddCoordinate_Click(object sender, EventArgs e)
         {
+            _numbers = null;
             dataGridViewCoordinates.Rows.Add();
         }
 
         private void buttonDeleteCoordinate_Click(object sender, EventArgs e)
         {
+            _numbers = null;
             dataGridViewCoordinates.Rows.RemoveAt(dataGridViewCoordinates.CurrentCell.RowIndex);
         }
 
         private void buttonUseMethod_Click(object sender, EventArgs e)
         {
+            _numbers = null;
+            for (int j = Numbers.GetLength(1) - 1; j > 0; j--)
+            {
+                // основной цикл внутри каждого прогона
+                // перебираем все элементы от первого до последнего в прогоне, который мы определили выше
+                for (int i = 0; i < j; i++)
+                {
+                    // если текущий элемент больше следующего
+                    if (Numbers[0,i] > Numbers[0,i + 1])
+                    {
+                        // запоминаем значение текущего элемента
+                        double temp = Numbers[0, i];
+                        // записываем на его место значение следующего
+                        Numbers[0, i] = Numbers[0, i + 1];
+                        // а на место следующего ставим значение текущего, тем самым меняем их местами
+                        Numbers[0, i + 1] = temp;
+
+                        temp = Numbers[1, i];
+                        Numbers[1, i] = Numbers[1, i + 1];
+                        Numbers[1, i + 1] = temp;
+                    }
+                }
+            }
+            for (int i = 0; i < Numbers.GetLength(1) - 1; i++)
+            {
+                if(Numbers[0,i] == Numbers[0, i + 1])
+                {
+                    if (Numbers[1, i] != Numbers[1, i + 1])
+                    {
+                        MessageBox.Show("Некорректные координаты точек");
+                        return;
+                    }
+                    if (Numbers[1, i] == Numbers[1, i + 1])
+                    {
+                        MessageBox.Show("Удалите дублирование");
+                        return;
+                    }
+                }
+            }
+
+
+
+
             DrawPoints();
             switch (comboBoxMethods.SelectedIndex)
             {
