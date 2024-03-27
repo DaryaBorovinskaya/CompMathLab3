@@ -58,6 +58,7 @@ namespace CompMathLab3
         private void DrawByLeastSquares()
         {
             chart1.Series[0].Points.Clear();
+            chart1.Series[4].Points.Clear();
             if (numericUpDownDegree.Value == 4)
             {
                 if (textBoxA4.Text == string.Empty || textBoxA3.Text == string.Empty || textBoxA2.Text == string.Empty 
@@ -75,9 +76,14 @@ namespace CompMathLab3
                         double.Parse(textBoxA1.Text),
                         double.Parse(textBoxA0.Text)
                     });
+                    double[] y1 = _leastSquares.ApplySmoothing(Numbers, (int)(numericUpDownDegree.Value));
                     for (int i = 0; i < y.Length; i++)
                     {
                         chart1.Series[0].Points.AddXY(Numbers[0, i], y[i]);
+                    }
+                    for (int i = 0; i < y1.Length; i++)
+                    {
+                        chart1.Series[4].Points.AddXY(Numbers[0, i], y1[i]);
                     }
                 }
             }
