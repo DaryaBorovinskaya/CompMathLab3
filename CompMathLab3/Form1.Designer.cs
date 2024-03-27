@@ -33,6 +33,7 @@
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridViewCoordinates = new System.Windows.Forms.DataGridView();
@@ -75,10 +76,10 @@
             this.chart1.Location = new System.Drawing.Point(24, 12);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
-            series1.BorderWidth = 4;
+            series1.BorderWidth = 10;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Color = System.Drawing.Color.Purple;
+            series1.Color = System.Drawing.Color.Violet;
             series1.Name = "Series1";
             series2.BorderWidth = 4;
             series2.ChartArea = "ChartArea1";
@@ -91,10 +92,16 @@
             series4.ChartArea = "ChartArea1";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
             series4.Name = "Series4";
+            series5.BorderWidth = 2;
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series5.Color = System.Drawing.Color.Lime;
+            series5.Name = "Series5";
             this.chart1.Series.Add(series1);
             this.chart1.Series.Add(series2);
             this.chart1.Series.Add(series3);
             this.chart1.Series.Add(series4);
+            this.chart1.Series.Add(series5);
             this.chart1.Size = new System.Drawing.Size(684, 410);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "Графики";
@@ -270,7 +277,7 @@
             // textBoxA1
             // 
             this.textBoxA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.textBoxA1.Location = new System.Drawing.Point(1079, 293);
+            this.textBoxA1.Location = new System.Drawing.Point(1240, 221);
             this.textBoxA1.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxA1.Name = "textBoxA1";
             this.textBoxA1.Size = new System.Drawing.Size(105, 28);
@@ -290,7 +297,7 @@
             // textBoxA2
             // 
             this.textBoxA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.textBoxA2.Location = new System.Drawing.Point(1240, 221);
+            this.textBoxA2.Location = new System.Drawing.Point(1077, 293);
             this.textBoxA2.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxA2.Name = "textBoxA2";
             this.textBoxA2.Size = new System.Drawing.Size(105, 28);
